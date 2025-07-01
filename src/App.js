@@ -1,11 +1,12 @@
 import React from 'react';
 
-const App=() => {
-    return (
-        <div>
-            <h1>hello,World</h1>
-        </div>
-    );
-}
+const App = () => {
+  console.log("App component loaded");
+  return (
+    <div>
+      <h1>Hello, World</h1>
+    </div>
+  );
+};
 
 export default App;
