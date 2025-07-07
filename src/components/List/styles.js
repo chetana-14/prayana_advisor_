@@ -1,22 +1,35 @@
 import { makeStyles } from '@mui/styles';
 
-export default makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(1), minWidth: 120, marginBottom: '30px',
+export default makeStyles(() => ({
+  chip: { margin: '5px 5px 5px 0' },
+
+  subtitle: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: '10px',
   },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
+
+  spacing: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
-  loading: {
-    height: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center',
-  },
+
   container: {
     padding: '25px',
+    height: '85vh',
+    overflowY: 'auto',   // <-- makes the left panel scroll
   },
-  marginBottom: {
+
+  formControl: {
+    margin: '10px',
+    minWidth: 120,
     marginBottom: '30px',
   },
+
   list: {
-    height: '75vh', overflow: 'auto',
+    height: '75vh',
+    overflow: 'auto',
   },
 }));
